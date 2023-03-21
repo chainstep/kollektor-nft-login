@@ -18,7 +18,12 @@ export default function Kollektor<P extends KollektorProfile>(
   return {
     id: "kollektor",
     name: "Kollektor.io",
-    ...oauthServerConfig,
+    authorization: {
+      url: "https://oauth.kollektor.io/authorize",
+      params: { scope: "edition-427988a5-fdd1-49f6-a1fc-a13105775856" },
+    },
+    token: "https://oauth.kollektor.io/token",
+    userinfo: "https://oauth.kollektor.io/user/me",
     type: "oauth",
     profile(profile) {
       return {
@@ -40,12 +45,3 @@ export default function Kollektor<P extends KollektorProfile>(
     ...options,
   };
 }
-
-const oauthServerConfig = {
-  authorization: {
-    url: "https://oauth.kollektor.io/authorize",
-    params: { scope: "edition-427988a5-fdd1-49f6-a1fc-a13105775856" },
-  },
-  token: "https://oauth.kollektor.io/token",
-  userinfo: "https://oauth.kollektor.io/user/me",
-};
