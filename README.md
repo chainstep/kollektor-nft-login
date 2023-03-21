@@ -29,7 +29,7 @@ cd nextjs
 
 Create a github key (for an alternative login), and a kollektor.io account:
 
-1. Go to https://github.com and follow the [instructions] to register an OAuth client (https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authenticating-to-the-rest-api-with-an-oauth-app).
+1. Go to https://github.com and follow the [instructions](https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authenticating-to-the-rest-api-with-an-oauth-app) to register an OAuth client.
 1. copy the ID and SECRET to your .env file.
 
 ## Kollektor.io Setup
@@ -97,8 +97,7 @@ cd nextjs-minimal
 
 Get a client ID and SECRET by signing up at https://app.kollektor.io and emailing info@kollektor.io from the same email account.
 
-Get a matching NFT for free from [kollektor.io's klinktree]
-(https://app.kollektor.io/api/payment/create-buy-nft-checkout/?nftId=427988a5-fdd1-49f6-a1fc-a13105775856&ownerId=8aef3bcc-0f25-41e2-ba4e-fb58b06dd6b3).
+Get a matching NFT for free from [kollektor.io's klinktree](https://app.kollektor.io/api/payment/create-buy-nft-checkout/?nftId=427988a5-fdd1-49f6-a1fc-a13105775856&ownerId=8aef3bcc-0f25-41e2-ba4e-fb58b06dd6b3).
 You can also create an NFT at https://app.kollektor.io and note down its edition id, if you wish. Then, edit kollektor.ts to change the OAuth2 scope to
 `edition-<your-id>`
 
